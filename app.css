@@ -1,0 +1,185 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*************************************************/
+
+html {
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#card {
+    background-color: white;
+    border-radius: 15px;
+    max-width: 330px;
+    min-height: 570px;
+}
+
+.hero {
+    max-width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 2em;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    margin-bottom: 1em;
+    font-weight: 900;
+    font-size: 22px;
+    color: hsl(223, 47%, 23%);
+}
+
+.subtitle {
+    margin-bottom: 1.5em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    line-height: 1.5em;
+    word-spacing: 1.5px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 20px;
+    padding: 1em 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.info a {
+    color: hsl(245, 75%, 52%);
+    margin-left: 1em;
+    margin-top: 1em;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 100ms all ease-in-out;
+}
+
+.plan h2, .payment {
+    margin: 0 1.5em;
+}
+
+.title, h2, .subtitle {
+    text-align: center;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 16px;
+    color: hsl(223, 47%, 23%);
+}
+
+.subtitle, .payment {
+    font-weight: 500;
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+}
+
+.proceed-button, .cancel-button {
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    transition: 100ms all ease-in-out;
+}
+
+.proceed-button {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    padding: 1em 4.5em;
+    border-radius: 10px;
+    box-shadow: 3px 20px 3px 0 hsl(225, 100%, 98%);
+    margin-bottom: 2em;
+}
+
+.cancel-button {
+    color: hsl(224, 23%, 55%);
+}
+
+.info a:hover, .info a:focus {
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.proceed-button:hover, .proceed-button:focus {
+    background-color: hsla(245, 75%, 52%, 0.726);
+}
+
+.cancel-button:hover, .cancel-button:focus {
+    color:hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+@media (min-width: 900px) {
+    html {
+        background-image: url(./images/pattern-background-desktop.svg);
+    }
+}
